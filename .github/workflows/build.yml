@@ -9,4 +9,4 @@ jobs:
     uses: nirajan-devops/ci-workflows/.github/workflows/node.yml@main
     with:
       build-command: next build
-      working-directory: next-project-repo
+      working-directory: .
