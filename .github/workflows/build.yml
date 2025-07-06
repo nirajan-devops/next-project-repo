@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    uses: my-org/ci-workflows/.github/workflows/node.yml@main
+    uses: nirajan-devops/ci-workflows/.github/workflows/node.yml@main
     with:
       build-command: next build
       working-directory: .
