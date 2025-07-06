@@ -1,0 +1,12 @@
+name: CI for HELLO-NEPAL-APP
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    uses: nirajan-devops/ci-workflows/.github/workflows/node.yml@main
+    with:
+      build-command: next build
