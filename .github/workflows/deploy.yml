@@ -44,6 +44,8 @@ jobs:
               echo "Docker already installed"
             fi
 
+            cd "/home/${{ secrets.USERNAME }}"
+
             # Run docker commands with sudo
             sudo docker load < app.tar
             sudo docker stop nextjs-app || true && sudo docker rm nextjs-app || true
