@@ -25,10 +25,11 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "app.tar"
-          target: "/home/${{ secrets.USERNAME }}/app.tar"
+          target: "/home/${{ secrets.USERNAME }}/"
+          tar_dereference: false
           strip_components: false
-          tar_tmp_path: ""
           overwrite: true
+          rm: false
 
       - name: Install Docker and deploy container
         uses: appleboy/ssh-action@master
