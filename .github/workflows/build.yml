@@ -11,6 +11,8 @@ jobs:
       image-name: nextjs-app
       container-name: nextjs-app
       port: "3000"
+      container-port: "3000"
+      
     secrets:
       HOST: ${{ secrets.HOST }}
       USERNAME: ${{ secrets.USERNAME }}
